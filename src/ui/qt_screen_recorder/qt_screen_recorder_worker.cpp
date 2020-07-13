@@ -78,7 +78,8 @@ void qt_screen_recorder::Worker::ScreenRecording(uint32_t a_delayInMs)
 	}
 	
 	//QMetaObject::invokeMethod(qApp,[this, pScreens, pRecStr, pbArray]() mutable {
-	QMetaObject::invokeMethod(qApp,[this, pRecStr, pbArray, pbOk]() {
+	//QMetaObject::invokeMethod(qApp,[this, pRecStr, pbArray, pbOk]() 
+	{
 		auto screens = qApp->screens();
 		QPixmap pxmScreen;
 		QImage image1;
@@ -138,7 +139,8 @@ void qt_screen_recorder::Worker::ScreenRecording(uint32_t a_delayInMs)
 		//	return;
 		//}
 		
-	}, ::Qt::BlockingQueuedConnection);
+	}
+	//, ::Qt::BlockingQueuedConnection);
 	
 	if( (!bits.shouldRun)||(!bits.recordScreen)){
 		emit thisApp()->RecordingFinishedSignal(bOk);
@@ -155,7 +157,8 @@ void qt_screen_recorder::Worker::ScreenRecording(uint32_t a_delayInMs)
 		
 		SleepMsIntr(a_delayInMs);
 		
-		QMetaObject::invokeMethod(qApp,[pRecStr,pbArray](){
+		//QMetaObject::invokeMethod(qApp,[pRecStr,pbArray]()
+		{
 			QPixmap pxmScreen;
 			QImage image1;
 			int i, nLineOffset;
@@ -182,7 +185,8 @@ void qt_screen_recorder::Worker::ScreenRecording(uint32_t a_delayInMs)
 				pRgbIn = reinterpret_cast<QRgb*>(image1.scanLine(i));
 				memcpy(&pRGBOut[nLineOffset],pRgbIn,pRecStr->unMemcpySize);
 			}
-		}, ::Qt::BlockingQueuedConnection);
+		}
+		//, ::Qt::BlockingQueuedConnection);
 		
 		GifWriteFrame(&g,reinterpret_cast<uint8_t*>(bArray.data()), static_cast<uint32_t>(recStr.width), static_cast<uint32_t>(recStr.height), delay);
 		
