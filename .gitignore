@@ -1,0 +1,14 @@
+
+*.[oa]
+*~
+*.obj
+*.pro.user*
+*.autosave
+
+prj/*/*/*
+!prj/*/*_qt/*.pro
+!prj/*/*_qt/*.pri
+
+sys/*/*/*
+!sys/*/dll/*.dll
+!sys/*/dll/*.so.*
