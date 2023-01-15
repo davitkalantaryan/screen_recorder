@@ -23,5 +23,11 @@ INCLUDEPATH += $${SCR_REC_INCLUDE}
 
 SOURCES += $$files($${SOURCES_DIR}/*.cpp,false)
 
+SOURCES += "$${cpputilsRepoRoot}/src/core/cpputils_inscopecleaner.cpp"
+SOURCES += "$${cpputilsRepoRoot}/src/core/cpputils_unnamedsemaphore.cpp"
+
+SOURCES += "$${qtutilsRepoRoot}/src/core/qtutils_core_threadls.cpp"
+SOURCES += "$${qtutilsRepoRoot}/src/core/qtutils_core_threadobject.cpp"
+
 HEADERS += $$files($${SCR_REC_INCLUDE}/*.h,true)
 HEADERS += $$files($${SOURCES_DIR}/*.hpp,true)

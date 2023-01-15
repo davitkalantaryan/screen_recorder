@@ -14,7 +14,7 @@
 
 namespace screen_recorder{ namespace qt_multimedia_test01{
 
-class CINTERNAL_DLL_PRIVATE CRecorderObject final : public ::qtutils::ThreadObject
+class CPPUTILS_DLL_PRIVATE CRecorderObject final : public ::qtutils::ThreadObject
 {
 };
 

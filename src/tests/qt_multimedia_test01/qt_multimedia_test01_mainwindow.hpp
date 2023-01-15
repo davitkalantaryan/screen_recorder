@@ -15,7 +15,7 @@
 
 namespace screen_recorder{ namespace qt_multimedia_test01{
 
-class CINTERNAL_DLL_PRIVATE MainWindow final : public QWidget
+class CPPUTILS_DLL_PRIVATE MainWindow final : public QWidget
 {
 public:
     MainWindow();

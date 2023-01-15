@@ -15,9 +15,9 @@
 
 namespace screen_recorder{ namespace qt_multimedia_test01{
 
-class CINTERNAL_DLL_PRIVATE Application_p;
+class CPPUTILS_DLL_PRIVATE Application_p;
 
-class CINTERNAL_DLL_PRIVATE Application final : public QApplication
+class CPPUTILS_DLL_PRIVATE Application final : public QApplication
 {
 public:
     ~Application() override;
