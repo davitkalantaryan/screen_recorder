@@ -11,9 +11,13 @@
 
 #include <screen_recorder/export_symbols.h>
 #include "qt_multimedia_test01_application.hpp"
+#include "qt_multimedia_test01_threadobjects.hpp"
+#include <qtutils/core/threadorinitdeinit.hpp>
+#include <list>
 
 namespace screen_recorder{ namespace qt_multimedia_test01{
 
+typedef ::std::list<::qtutils::ThreadOrInitdeinit*> TypeThreadsList;
 
 class CINTERNAL_DLL_PRIVATE Application_p final
 {
@@ -22,7 +26,13 @@ public:
     Application_p(Application* a_thisApp);
 
 private:
-    Application*const                   m_pThisApp;
+    void InitBeforeThreads();
+    void InitAfterThreads();
+
+private:
+    Application*const       m_pThisApp;
+    TypeThreadsList         m_threadsList;
+    CRecorderObject*        m_pRecorderObject;
 };
 
 }}  //  namespace screen_recorder{ namespace qt_multimedia_test01{
