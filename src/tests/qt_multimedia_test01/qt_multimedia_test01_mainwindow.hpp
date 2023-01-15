@@ -1,6 +1,6 @@
 //
-// file:			qt_multimedia_test01_application.hpp
-// path:			src/tests/qt_multimedia_test01/qt_multimedia_test01_application.hpp
+// file:			qt_multimedia_test01_mainwindow.hpp
+// path:			src/tests/qt_multimedia_test01/qt_multimedia_test01_mainwindow.hpp
 // created on:		2023 Jan 15
 // Created by:		Davit Kalantaryan (davit.kalantaryan@desy.de)
 //
@@ -11,20 +11,14 @@
 
 #include <screen_recorder/export_symbols.h>
 #include <qtutils/disable_utils_warnings.h>
-#include <QApplication>
+#include <QWidget>
 
 namespace screen_recorder{ namespace qt_multimedia_test01{
 
-class CINTERNAL_DLL_PRIVATE Application_p;
-
-class CINTERNAL_DLL_PRIVATE Application final : public QApplication
+class CINTERNAL_DLL_PRIVATE MainWindow final : public QWidget
 {
 public:
-    ~Application() override;
-    Application(int& argc, char** argv);
-
-private:
-    Application_p*const  m_app_data_ptr;
+    MainWindow();
 };
 
 }}  //  namespace screen_recorder{ namespace qt_multimedia_test01{
