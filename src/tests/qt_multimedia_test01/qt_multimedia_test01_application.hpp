@@ -7,9 +7,15 @@
 
 // see: https://www.qt.io/blog/qt-multimedia-in-qt-6
 
-#include <>
+#include <screen_recorder/export_symbols.h>
+#include <qtutils/disable_utils_warnings.h>
 #include <QApplication>
 
 namespace screen_recorder{ namespace qt_multimedia_test01{
+
+class CINTERNAL_DLL_PRIVATE Application : public QApplication
+{
+    //
+};
 
 }}  //  namespace screen_recorder{ namespace qt_multimedia_test01{
