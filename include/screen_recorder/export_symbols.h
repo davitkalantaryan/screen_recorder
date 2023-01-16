@@ -8,8 +8,7 @@
 #ifndef SCREEN_RECORDER_INCLUDE_SCREEN_RECORDER_EXPORT_SYMBOLS_H
 #define SCREEN_RECORDER_INCLUDE_SCREEN_RECORDER_EXPORT_SYMBOLS_H
 
-#include <cinternal/internal_header.h>
-
+#include <screen_recorder/internal_header.h>
 
 #ifndef SCRREC_EXPORT
 #if defined(SCRREC_COMPILING_SHARED_LIB)

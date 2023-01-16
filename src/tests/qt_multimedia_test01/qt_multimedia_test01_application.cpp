@@ -26,4 +26,16 @@ Application::Application(int& a_argc, char** a_argv)
 }
 
 
+void Application::ExitApp()
+{
+    quit();
+}
+
+
+void Application::StartRecording()
+{
+    m_app_data_ptr->StartVideoCapture();
+}
+
+
 }}  //  namespace screen_recorder{ namespace qt_multimedia_test01{

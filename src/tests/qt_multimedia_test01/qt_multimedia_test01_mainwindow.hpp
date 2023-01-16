@@ -12,6 +12,9 @@
 #include <screen_recorder/export_symbols.h>
 #include <qtutils/disable_utils_warnings.h>
 #include <QWidget>
+#include <QGridLayout>
+#include <QPushButton>
+#include <QLabel>
 
 namespace screen_recorder{ namespace qt_multimedia_test01{
 
@@ -19,6 +22,15 @@ class CPPUTILS_DLL_PRIVATE MainWindow final : public QWidget
 {
 public:
     MainWindow();
+
+private:
+    void ConnectSignals();
+
+private:
+    QGridLayout     m_mainLayout;
+    QLabel          m_screenShtLbl;
+    QPushButton     m_startBtn;
+    QPushButton     m_exitBtn;
 };
 
 }}  //  namespace screen_recorder{ namespace qt_multimedia_test01{

@@ -19,20 +19,32 @@ namespace screen_recorder{ namespace qt_multimedia_test01{
 
 typedef ::std::list<::qtutils::ThreadOrInitdeinit*> TypeThreadsList;
 
+class CPPUTILS_DLL_PRIVATE ApplicationEarlyData final
+{
+public:
+    ApplicationEarlyData();
+};
+
 class CPPUTILS_DLL_PRIVATE Application_p final
 {
 public:
     ~Application_p();
     Application_p(Application* a_thisApp);
 
+    void StartVideoCapture();
+
 private:
     void InitBeforeThreads();
     void InitAfterThreads();
+    void MakeOneScreenshotAndPutItToImage();
+    void StartVideoCaptureRecThread();
 
 private:
     Application*const       m_pThisApp;
+    ApplicationEarlyData    m_earlyData;
     TypeThreadsList         m_threadsList;
     CRecorderObject*        m_pRecorderObject;
+    CTimersObject*          m_pTimersObject;
 };
 
 }}  //  namespace screen_recorder{ namespace qt_multimedia_test01{
