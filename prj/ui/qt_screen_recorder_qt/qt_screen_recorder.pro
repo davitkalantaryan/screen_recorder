@@ -5,17 +5,12 @@
 #  
 
 
+message("!!! $${_PRO_FILE_}")
+include($${PWD}/../../common/common_qt/flagsandsys_common_private.pri)
+
 QSR_APPLICATION_VERSION_VAR=1.1.8
 
-#TARGET = qt_screen_recorder
-
-#DEFINES += WAIT_FOR_DEBUGGER
 DEFINES +=	QSR_APPLICATION_VERSION=\\\"$${QSR_APPLICATION_VERSION_VAR}\\\"
-
-message("file:  qt_screen_recorder.pro  ")
-include($${PWD}/../../common/common_qt/sys_common.pri)
-
-INCLUDEPATH += $${PWD}/../../../include
 
 #win32: debug: CONFIG += console
 QT += widgets
