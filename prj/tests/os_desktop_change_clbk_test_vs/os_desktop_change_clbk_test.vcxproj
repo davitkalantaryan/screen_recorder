@@ -170,7 +170,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtGui;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -184,7 +184,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtGui;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -198,7 +198,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtGui;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -214,7 +214,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtGui;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -232,7 +232,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtGui;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -250,7 +250,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtGui;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -266,7 +266,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtGui;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -282,7 +282,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtCore;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtGui;$(FOCUST_QT_ROOT_DIR)\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
