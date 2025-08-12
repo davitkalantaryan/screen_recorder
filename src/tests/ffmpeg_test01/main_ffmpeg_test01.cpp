@@ -1,6 +1,6 @@
 
 
-#define MAKE_REAL_SCREENSHOT
+//#define MAKE_REAL_SCREENSHOT
 #define FRAME_RATE_TEST     25
 
 
@@ -86,7 +86,9 @@ struct SEncodeParams{
 
 static void InitEncoderData(SEncodeParams* a_ep_p);
 static void FillVideoWithAllFrames(SEncodeParams* a_ep_p);
+#ifdef MAKE_REAL_SCREENSHOT
 static uint64_t GetMilisecondsFromEpoch();
+#endif
 
 static int s_loop = 0;
 
@@ -154,16 +156,33 @@ int main(int a_argc, char** a_argv)
 
 void EncoderThread::run()
 {
+#ifdef _WIN32
     CoInitializeEx(nullptr, COINIT_MULTITHREADED);
+#endif
 
     MainLoop();
-
+        
+#ifdef _WIN32
     CoUninitialize();
+#endif
 }
 
 
 void EncoderThread::MainLoop()
 {
+    
+    const AVCodec *codec = NULL;
+    void *i = NULL;
+    
+    //avcodec_register_all(); // Not required in newer FFmpeg (>=4.0), but safe
+    
+    while ((codec = av_codec_iterate(&i))) {
+        printf("%-20s  %s  %s\n",
+               codec->name,
+               av_codec_is_encoder(codec) ? "encoder" : "decoder",
+               codec->long_name ? codec->long_name : "");
+    }
+    
     SEncodeParams aEp = {nullptr,nullptr,nullptr,nullptr,nullptr};
 
     InitEncoderData(&aEp);
@@ -288,7 +307,8 @@ static void InitEncoderData(SEncodeParams* a_ep_p)
     int ret;
 
     filename   = "out.mp4";
-    codec_name = "h264_mf"; // keep your Media Foundation encoder (or "libx264" if preferred)
+    //codec_name = "h264_mf"; // keep your Media Foundation encoder (or "libx264" if preferred) // windows
+    codec_name = "h264_v4l2m2m";
 
     // find encoder
     codec = avcodec_find_encoder_by_name(codec_name);

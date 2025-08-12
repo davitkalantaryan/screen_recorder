@@ -19,14 +19,17 @@ SOURSES_DIR = $${screenRecorderRepositoryRoot}/src/tests/ffmpeg_test01
 win32 {
     #LIBS += -lD3D11
     LIBS += -lOle32
+    LIBS += -L$${FFMPEG_DEV_ROOT}/bin
+} else {
+    LIBS += -L$${FFMPEG_DEV_ROOT}/lib
 }
 
 INCLUDEPATH += $${FFMPEG_DEV_ROOT}/include
-LIBS += -L$${FFMPEG_DEV_ROOT}/bin
 LIBS += -lavformat
 LIBS += -lavcodec
 LIBS += -lavutil
 LIBS += -lswscale
+LIBS += -lswresample
 
 SOURCES += $$files($${SOURSES_DIR}/*.cpp,false)
 
